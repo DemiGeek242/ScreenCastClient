@@ -1,15 +1,14 @@
 <template>
-  <img class="logo" alt="Vue logo" src="./assets/os25.png">
-  <HomePage msg="yes we can"/>
+  <!-- Contenu de la page, affiché en fonction de la route active -->
+    <router-view></router-view>
 </template>
 
 <script>
-import HomePage from './components/HomePage.vue'
 
 export default {
   name: 'App',
   components: {
-    HomePage
+    
   }
 }
 </script>
@@ -22,9 +21,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-.logo{
-  width: 200px;
-  margin-top: 100px;
 }
 </style>
